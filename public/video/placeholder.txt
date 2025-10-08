@@ -1,0 +1,29 @@
+# Video Directory
+
+This directory contains video files for the BUBBLE CLEAN SRL website.
+
+## Video Files Needed:
+- proces-curatare.mp4 - Professional cleaning process video
+- tehnici-avansate.mp4 - Advanced cleaning techniques video
+- before-after.mp4 - Before/after comparison video
+- echipa-lucru.mp4 - Team working video
+
+## Video Specifications:
+- Format: MP4 (H.264 codec)
+- Resolution: 1920x1080 (Full HD) or 1280x720 (HD)
+- Duration: 30-60 seconds each
+- File size: Under 10MB each for web optimization
+
+## Usage:
+These videos are embedded in the portfolio section of the website to showcase:
+1. Professional cleaning processes
+2. Advanced techniques and equipment
+3. Before/after results
+4. Team expertise and professionalism
+
+To add real videos, replace the placeholder files with actual MP4 video files.
+
+
+
+
+

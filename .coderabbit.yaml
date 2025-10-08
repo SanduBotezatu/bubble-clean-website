@@ -1,0 +1,116 @@
+# CodeRabbit Configuration for Bubble Clean SRL
+# https://docs.coderabbit.ai/guides/configure-coderabbit
+
+# Language settings
+language: ro
+
+# Review settings
+reviews:
+  # Request changes workflow
+  request_changes_workflow: true
+  
+  # High level summary
+  high_level_summary: true
+  
+  # Poem style summary (optional fun feature)
+  poem: false
+  
+  # Review status
+  review_status: true
+  
+  # Collapse walkthrough
+  collapse_walkthrough: false
+  
+  # Auto review settings
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - main
+      - master
+      - develop
+  
+  # Path filters - customize what to review
+  path_filters:
+    - "!**/node_modules/**"
+    - "!**/dist/**"
+    - "!**/.next/**"
+    - "!**/build/**"
+    - "!**/*.lock"
+    - "!**/package-lock.json"
+    - "!**/yarn.lock"
+
+# Chat settings
+chat:
+  auto_reply: true
+
+# Knowledge base - specific to your project
+knowledge_base:
+  # Learnings will be stored here
+  learnings:
+    - "This is a Next.js 14 project for Bubble Clean SRL"
+    - "The project uses TypeScript, Tailwind CSS, and Framer Motion"
+    - "The main service is solar panel cleaning in Timișoara"
+    - "The project supports Romanian and Russian languages"
+    - "Follow Next.js 14 app router conventions"
+    - "Use Tailwind CSS for styling, avoid inline styles"
+    - "Prefer TypeScript strict mode and proper typing"
+    - "Components should be in src/components/"
+    - "Use shadcn/ui pattern for component structure"
+
+# Review rules - what to check
+rules:
+  # Code quality
+  - name: "TypeScript Strict"
+    description: "Ensure strict TypeScript typing"
+    pattern: "**/*.{ts,tsx}"
+    
+  - name: "React Best Practices"
+    description: "Follow React and Next.js best practices"
+    pattern: "**/*.{tsx,jsx}"
+    
+  - name: "Accessibility"
+    description: "Check for accessibility issues (WCAG 2.1)"
+    pattern: "**/*.{tsx,jsx}"
+    
+  - name: "Performance"
+    description: "Check for performance issues and optimizations"
+    pattern: "**/*.{ts,tsx,js,jsx}"
+    
+  - name: "Security"
+    description: "Check for security vulnerabilities"
+    pattern: "**/*"
+
+# Early access features
+early_access: true
+
+# Tools to enable
+tools:
+  # AST-based analysis
+  ast_grep:
+    enabled: true
+    
+  # GitHub Checks
+  github_checks:
+    enabled: true
+    timeout_ms: 90000
+
+# Tone of reviews - professional and constructive
+tone_instructions: |
+  - Be professional and constructive
+  - Provide clear explanations in Romanian when possible
+  - Focus on best practices for Next.js 14 and TypeScript
+  - Suggest specific code improvements with examples
+  - Highlight security and performance issues
+  - Be encouraging and educational
+
+# Custom prompts
+prompts:
+  review:
+    - "Check for Next.js 14 app router best practices"
+    - "Verify TypeScript types are properly defined"
+    - "Ensure Tailwind CSS classes are used correctly"
+    - "Check for accessibility issues"
+    - "Look for performance optimization opportunities"
+    - "Verify responsive design implementation"
+
